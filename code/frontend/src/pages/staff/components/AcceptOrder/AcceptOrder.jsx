@@ -76,7 +76,7 @@ const AcceptOrder = () => {
             title: 'Tên khách hàng',
             render: (userId) => {
 
-                return `${userId.name}`
+                return userId?.name || 'N/A'
             }
         },
         {

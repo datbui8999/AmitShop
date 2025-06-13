@@ -42,7 +42,7 @@ const AppCanceledSale = () => {
             dataIndex: 'userId',
             title: 'Tên khách hàng',
             render: (userId) => {
-                return `${userId.name}`
+                return userId?.name || 'N/A'
             }
         },
         {
