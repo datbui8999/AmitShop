@@ -169,7 +169,8 @@ const Bought = () => {
       </div>
       <div className={`${styles.customScrollbar}`}>
         <Row gutter={[16, 24]}>
-          {data?.map((items, index) => {
+          {data?.filter(items => items?.productList?.some(item => item?.productId))
+            .map((items, index) => {
             const isExpanded = expandedIndices[index];
             const displayItems = isExpanded
               ? items.productList
