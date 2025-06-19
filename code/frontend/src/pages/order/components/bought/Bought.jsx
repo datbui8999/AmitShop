@@ -75,7 +75,7 @@ const Bought = () => {
         setShowQRCode(true);
         // startTransactionCheck({
         //   transactionId: result.transactionId,
-        //   paymentInfoId: dataModal._id,
+           paymentInfoId: dataModal._id,
         // });
       }
     } catch (err) {
