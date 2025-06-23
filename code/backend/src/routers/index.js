@@ -9,7 +9,7 @@ router.use("/api/shippinginfo", require("./shippinginfo.router"));
 router.use("/api/inventoryreceipt", require("./inventoryreceipt.router"));
 router.use("/api/statistics", require("./statistics.router"));
 // router.use("/api/message", require("./message.router"));
-// router.use("/api/comment", require("./comment.router"));
+router.use("/api/comment", require("./comment.router"));
 
 
 module.exports = router;
